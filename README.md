@@ -35,13 +35,14 @@ CUHK, Shanghai AI Lab
 
 ## 💡 Highlights
 ### 🔥 A New Paradigm for Online Video LLMs with Active Real-Time Interaction
-Dispider introduces a groundbreaking approach by enabling active, real-time interactions with streaming videos. Unlike traditional offline video LLMs that require processing the entire video before generating responses, Dispider operates seamlessly in live scenarios, providing continuous and timely feedback as the video streams.
+Dispider enables real-time interactions with streaming videos, unlike traditional offline video LLMs that process the entire video before responding. It provides continuous, timely feedback in live scenarios.
 
 ### ⚡️ Disentangled Perception, Decision, and Reaction Modules Operating Asynchronously
-Dispider's architecture uniquely separates perception, decision-making, and reaction generation into distinct, asynchronous modules. This disentangled design allows each component to function in parallel, ensuring that video processing and response generation do not block each other. The perception module continuously monitors the video stream, the decision module assesses when to trigger interactions based on the processed data, and the reaction module generates detailed responses without interrupting ongoing video analysis.
+Dispider separates perception, decision-making, and reaction into asynchronous modules that operate in parallel. This ensures continuous video processing and response generation without blocking, enabling timely interactions.
+
 
 ### 🤯 Superior Performance on StreamingBench and Conventional Video Benchmarks
-Extensive evaluations demonstrate Dispider's exceptional performance across various benchmarks. On StreamingBench, Dispider outperforms VideoLLM-online in temporal grounding, proactive response generation, and multi-step reasoning. Additionally, it surpasses traditional offline Video LLMs on long-video benchmarks such as EgoSchema, VideoMME, and MLVU, as well as time-sensitive tasks in ETBench. Dispider excels in temporal reasoning and effectively manages diverse video lengths, showcasing its robustness and versatility in real-time video understanding.
+Dispider outperforms VideoLLM-online on StreamingBench and surpasses offline Video LLMs on benchmarks like EgoSchema, VideoMME, MLVU, and ETBench. It excels in temporal reasoning and handles diverse video lengths effectively.
 
 
 
