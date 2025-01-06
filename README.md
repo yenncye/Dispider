@@ -28,7 +28,8 @@ CUHK, Shanghai AI Lab
 - [2025/1/6] 🔥🔥🔥 We released the paper on arXiv!
 
 ## 🧾 ToDo Lists
-- [ ] Release Inference Code and Checkpoints
+- [x] Release Inference Code
+- [ ] Release Checkpoints
 - [ ] Release Training Code
 - [ ] Release Demo Video
 
@@ -44,6 +45,50 @@ Dispider separates perception, decision-making, and reaction into asynchronous m
 ### 🤯 Superior Performance on StreamingBench and Conventional Video Benchmarks
 Dispider outperforms VideoLLM-online on StreamingBench and surpasses offline Video LLMs on benchmarks like EgoSchema, VideoMME, MLVU, and ETBench. It excels in temporal reasoning and handles diverse video lengths effectively.
 
+## 🛠️ Installation
+Follow the steps below to set up the Dispider environment. We recommend using the specified versions of each library to ensure reproduce optimal performance.
+
+### 1. **Create and Activate a Conda Environment**
+
+First, create a new Conda environment with Python 3.10 and activate it:
+
+```bash
+conda create -n dispider python=3.10 -y
+conda activate dispider
+```
+
+### 2. Upgrade pip
+
+Ensure that `pip` is up to date to avoid any installation issues:
+
+```bash
+pip install --upgrade pip
+```
+
+
+### 3. Install Required Libraries
+Ensure that CUDA 11.8 is installed on your system. You can download it from the [official NVIDIA website](https://developer.nvidia.com/cuda-11-8-0-download-archive). Follow the installation instructions provided there.
+
+```bash
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0
+
+pip install flash-attn==2.5.9.post1 transformers==4.41.2 deepspeed==0.9.5 accelerate==0.27.2 pydantic==1.10.13 timm==0.6.13
+```
+
+## Quick Start
+First download the checkpoints at the folder. 
+
+To perform single-turn inference, execute the following script:
+```bash
+python inference.py --model_path YOUR_MODEL_PATH --video_path YOUR_VIDEO_PATH --prompt YOUR_PROMPT
+```
+By default, the prompt is inserted at the beginning of the streaming video. The expected response will be generated in a single turn.
+
+## Example Evaluation of VideoMME
+Update the `video_path` in `data/videomme_template.json` and adjust the corresponding argument in `videomme.sh`. Then execute the following command, which will utilize 8 GPUs to run the inference in parallel:
+```bash
+bash scripts/eval/videomme.sh
+```
 
 
 ## ☎️ Contact
