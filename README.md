@@ -10,7 +10,7 @@ This repository is the official implementation of Dispider.
 <p align="center" style="font-size: em; margin-top: 0.5em">
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)<br>
-<a href="https://arxiv.org/abs/xxxx"><img src="https://img.shields.io/badge/arXiv-paper-<color>"></a>
+<a href="http://arxiv.org/abs/2501.03218"><img src="https://img.shields.io/badge/arXiv-paper-<color>"></a>
 <a href="assets/paper.pdf"><img src="https://img.shields.io/badge/PDF-red"></a>
 <!-- <a href="https://mark12ding.github.io/project/SAM2Long/"><img src="https://img.shields.io/badge/Project-Homepage-green"></a> -->
 <!-- <a href="https://huggingface.co/spaces/Mar2Ding/SAM2Long-Demo"><img src="https://img.shields.io/badge/🤗Hugging Demo-yellow"></a> -->
@@ -18,14 +18,14 @@ This repository is the official implementation of Dispider.
 
 
 
->[**Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction**](https://arxiv.org/abs/xxxxx)<br>
+>[**Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction**](http://arxiv.org/abs/2501.03218)<br>
 > [Rui Qian](https://shvdiwnkozbw.github.io/), [Shuangrui Ding](https://mark12ding.github.io/), [Xiaoyi Dong](https://lightdxy.github.io/), [Pan Zhang](https://panzhang0212.github.io/)<br>
 [Yuhang Zang](https://yuhangzang.github.io/), [Yuhang Cao](https://scholar.google.com/citations?user=sJkqsqkAAAAJ), [Dahua Lin](http://dahua.site/), [Jiaqi Wang](https://myownskyw7.github.io/)<br>
 CUHK, Shanghai AI Lab
 
 
 ## 📰 News
-- [2025/1/6] 🔥🔥🔥 We released the paper on arXiv!
+- [2025/1/6] 🔥🔥🔥 We released the paper on [arXiv](http://arxiv.org/abs/2501.03218)!
 
 ## 🧾 ToDo Lists
 - [x] Release Inference Code
@@ -102,11 +102,16 @@ The majority of this project is released under the CC-BY-NC 4.0 license as found
 ## 👍 Acknowledgements
 This codebase is built upon [LLaVA](https://github.com/haotian-liu/LLaVA) and leverages several open-source libraries. We extend our gratitude to the contributors and maintainers of these projects.
 
-<!-- 
+
 ## ✒️ Citation
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝.
 ```bibtex
-
-``` -->
+@article{qian2025dispider,
+        title={Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction},
+        author={Qian, Rui and Ding, Shuangrui and Dong, Xiaoyi and Zhang, Pan and Zang, Yuhang and Cao, Yuhang and Lin, Dahua and Wang, Jiaqi},
+        journal={arXiv preprint arXiv:2501.03218},
+        year={2025}
+      }
+```
 
 
