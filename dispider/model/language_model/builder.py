@@ -159,8 +159,7 @@ class StreamQwenCompressor(nn.Module):
 
 
 def build_compressor(compressor_cfg):
-    # compressor = getattr(compressor_cfg, 'mm_compressor', getattr(compressor_cfg, 'compressor', None))
-    compressor = '/mnt/petrelfs/dingshuangrui/LLaVA/checkpoints/long-qwen-16f-64r-4p-16-causal-qwen-streaming-combine'
+    compressor = getattr(compressor_cfg, 'mm_compressor', getattr(compressor_cfg, 'compressor', None))
     is_absolute_path_exists = os.path.exists(compressor)
     if is_absolute_path_exists:
         if 'stream' in compressor:
