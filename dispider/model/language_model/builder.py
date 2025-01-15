@@ -19,7 +19,7 @@ class QwenCompressor(nn.Module):
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
         self.compressor = LlavaQwenForCausalLM.from_pretrained(self.model_path)
         self.select_layer = 100
-        self.vision_encoder = CLIPVisionTower('/mnt/hwfile/mllm/xiaoyidong/share_model/clip_l_560_xc2_ft')
+        self.vision_encoder = CLIPVisionTower('YOUR_CLIP_CKPT_PATH')
     
     def forward_compress(
         self,
