@@ -1,5 +1,5 @@
 # <img src="img/logo.png" style="vertical-align: -10px;" :height="40px" width="40px"> Dispider
-This repository is the official implementation of Dispider.
+This repository is the official implementation of Dispider （CVPR 2025）.
 
 
 <img align="center" src="img/pipeline.png" style="  display: block;
@@ -25,6 +25,7 @@ CUHK, Shanghai AI Lab
 
 
 ## 📰 News
+- [2025/2/27] 🔥🔥🔥Dispider is accepted at CVPR 2025! Cheers🍻🍻🍻
 - [2025/1/6] 🔥🔥🔥 We released the paper on [arXiv](http://arxiv.org/abs/2501.03218)!
 
 ## 🧾 ToDo Lists
