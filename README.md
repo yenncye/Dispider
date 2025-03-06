@@ -113,6 +113,15 @@ If you find our work helpful for your research, please consider giving a star тн
         journal={arXiv preprint arXiv:2501.03218},
         year={2025}
       }
+
+@article{qian2025streaming,
+  title={Streaming long video understanding with large language models},
+  author={Qian, Rui and Dong, Xiaoyi and Zhang, Pan and Zang, Yuhang and Ding, Shuangrui and Lin, Dahua and Wang, Jiaqi},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={119336--119360},
+  year={2025}
+}
 ```
 
 
