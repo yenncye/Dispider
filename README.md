@@ -34,7 +34,7 @@ CUHK, Shanghai AI Lab
 
 ## 🧾 ToDo Lists
 - [x] Release Inference Code
-- [ ] Release Checkpoints
+- [x] Release Checkpoints
 - [ ] Release Training Code
 - [ ] Release Demo Video
 
