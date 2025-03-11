@@ -28,7 +28,7 @@ CUHK, Shanghai AI Lab
 
 
 ## 📰 News
-- [2025/3/11] 🔥🔥🔥We released the checkpoints of Dispider at [Huggingface🤗](https://huggingface.co/Mar2Ding/Dispider)🤗🤗
+- [2025/3/11] 🔥🔥🔥We released the checkpoints of Dispider at [Huggingface🤗](https://huggingface.co/Mar2Ding/Dispider)
 - [2025/2/27] 🔥🔥🔥Dispider is accepted at CVPR 2025! Cheers🍻🍻🍻
 - [2025/1/6] 🔥🔥🔥 We released the paper on [arXiv](http://arxiv.org/abs/2501.03218)!
 
