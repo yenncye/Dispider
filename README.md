@@ -12,7 +12,7 @@ This repository is the official implementation of Dispider （CVPR 2025）.
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)<br>
 <a href="http://arxiv.org/abs/2501.03218"><img src="https://img.shields.io/badge/arXiv-paper-<color>"></a>
 <a href="assets/paper.pdf"><img src="https://img.shields.io/badge/PDF-red"></a>
-<a href="https://huggingface.co/spaces/Mar2Ding/Dispider"><img src="https://img.shields.io/badge/🤗HuggingFace-yellow"></a>
+<a href="https://huggingface.co/Mar2Ding/Dispider"><img src="https://img.shields.io/badge/🤗HuggingFace-yellow"></a>
 <!-- <a href="https://mark12ding.github.io/project/SAM2Long/"><img src="https://img.shields.io/badge/Project-Homepage-green"></a> -->
 </p>
 
