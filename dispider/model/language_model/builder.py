@@ -19,7 +19,7 @@ class QwenCompressor(nn.Module):
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
         self.compressor = LlavaQwenForCausalLM.from_pretrained(self.model_path)
         self.select_layer = 100
-        self.vision_encoder = CLIPVisionTower('/mnt/hwfile/mllm/xiaoyidong/share_model/clip_l_560_xc2_ft')
+        self.vision_encoder = CLIPVisionTower('YOUR_CLIP_CKPT_PATH')
     
     def forward_compress(
         self,
@@ -159,8 +159,7 @@ class StreamQwenCompressor(nn.Module):
 
 
 def build_compressor(compressor_cfg):
-    # compressor = getattr(compressor_cfg, 'mm_compressor', getattr(compressor_cfg, 'compressor', None))
-    compressor = '/mnt/petrelfs/dingshuangrui/LLaVA/checkpoints/long-qwen-16f-64r-4p-16-causal-qwen-streaming-combine'
+    compressor = getattr(compressor_cfg, 'mm_compressor', getattr(compressor_cfg, 'compressor', None))
     is_absolute_path_exists = os.path.exists(compressor)
     if is_absolute_path_exists:
         if 'stream' in compressor:
