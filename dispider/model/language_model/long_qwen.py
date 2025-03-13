@@ -133,8 +133,6 @@ class LongQwen2ForCausalLM(Qwen2ForCausalLM, LongMetaForCausalLM):
         )
         if self.training:
             res.loss = res.loss + time_loss
-        if q_id is not None and type(similarity) is not int:
-            torch.save(similarity, '/mnt/petrelfs/qianrui/LLaVA/playground/data/eval/ego_grounding/answers/long-pool-16f-64r-4p-16-causal-caption-grounding_time/%s.pth' % q_id)
 
         return res
 
@@ -207,8 +205,6 @@ class LongQwen2ForCausalLM(Qwen2ForCausalLM, LongMetaForCausalLM):
         # if time_loss.item() < -1:
         #     return time_loss
 
-        if q_id is not None and type(similarity) is not int:
-            torch.save(similarity, '/mnt/petrelfs/qianrui/LLaVA/playground/data/eval/etbench/answers/long-qwen-16f-64r-4p-16-causal-qwen-streaming-etbench-qa-224-sft_time/%s.pth' % q_id)
         return super().generate(
             position_ids=position_ids,
             attention_mask=attention_mask,
