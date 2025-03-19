@@ -139,6 +139,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
     #         else:
     #             tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
     #             model = AutoModelForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False, trust_remote_code=True)
     model = LongQwen2ForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
     image_processor = None
 
