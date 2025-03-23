@@ -77,7 +77,7 @@ Ensure that CUDA 11.8 is installed on your system. You can download it from the 
 ```bash
 pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0
 
-pip install flash-attn==2.5.9.post1 transformers==4.41.2 deepspeed==0.9.5 accelerate==0.27.2 pydantic==1.10.13 timm==0.6.13
+pip install flash-attn==2.5.9.post1 transformers==4.41.2 deepspeed==0.9.5 accelerate==0.27.2 pydantic==1.10.13 timm==0.6.13 decord
 ```
 
 ## Quick Start
