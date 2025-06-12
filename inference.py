@@ -132,7 +132,7 @@ def preprocess_question(questions, tokenizer):
         sentence = tokenizer_image_token(q+DEFAULT_TODO_TOKEN, tokenizer, return_tensors='pt')
         seq.append(sentence)
     
-    return seq
+    return [seq]
 
 
 def process_data(video_id, scene_sep, question, model_config, tokenizer, processor, processor_large, time_tokenizer):
